@@ -91,6 +91,26 @@ const StyledHeader = styled.header`
     flex-direction: column;
     justify-content: center;
   }
+  .navbar-inverse .navbar-nav li div{
+    color: ${({ theme }) => theme.colors.primary.light5};
+    &:focus {
+        border-bottom: none;
+        background-color: transparent;
+    }
+    &:hover {
+        color: ${({ theme }) => theme.colors.grayscale.dark1};
+        background-color: ${({ theme }) => theme.colors.primary.light5};
+    border-bottom: none;
+    margin: 0;
+    &:after {
+    opacity: 1;
+    width: 100%;
+   }
+}
+.ant-menu-item a{
+color: black !important;
+}
+}
   .main-nav .ant-menu-submenu-title > svg {
     top: ${({ theme }) => theme.gridUnit * 5.25}px;
   }
